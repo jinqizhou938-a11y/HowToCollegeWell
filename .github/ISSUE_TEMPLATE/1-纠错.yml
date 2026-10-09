@@ -1,0 +1,38 @@
+name: 指出错误（金额、文号、条号、链接）
+description: 某条建议的依据写错了、过期了或链接失效
+title: "[纠错] "
+labels: ["纠错"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        纠错是这个项目里价值最高的贡献。请尽量附上**正确的原文链接**，方便核对。
+  - type: input
+    id: where
+    attributes:
+      label: 是哪一条
+      description: 章节名 + 条目编号（例：08-奖学金助学金与贷款.md 第 10 条）
+      placeholder: "08-奖学金助学金与贷款.md 第 12 条"
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: 现在写的是什么
+      placeholder: 把有问题的原文粘过来
+    validations:
+      required: true
+  - type: textarea
+    id: right
+    attributes:
+      label: 应该是什么
+      description: 请说明依据来源（文件全名 + 文号 + 链接，或法律名 + 条号）
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: 原文链接
+      placeholder: https://
+    validations:
+      required: false

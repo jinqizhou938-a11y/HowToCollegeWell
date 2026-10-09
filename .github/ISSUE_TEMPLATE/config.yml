@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 讨论区（你学校有什么别人不知道的规则？）
+    url: https://github.com/jinqizhou938-a11y/HowToCollegeWell/discussions
+    about: 不确定算不算 Issue 的，来讨论区聊。

@@ -1,0 +1,38 @@
+name: 补充本校的实际情况
+description: 把"只有本校人知道"的流程和坑补进来
+title: "[补充] "
+labels: ["补充各校情况"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        各校自定的规则（学分构成、绩点算法、综测加分、转专业门槛、报销比例）在这本书里只能给方法并标 C 级。
+        如果你在某所学校真的办成过某件事，欢迎把真实流程写下来——这对后来人比任何通用建议都有用。
+  - type: input
+    id: school
+    attributes:
+      label: 学校（可只写到省市或学校类型）
+      description: 不想透露具体学校可以写"某 211 高校""华东地区某财经类院校"
+    validations:
+      required: false
+  - type: input
+    id: chapter
+    attributes:
+      label: 建议补进哪一章
+      placeholder: "05-转专业辅修与交换"
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: 具体情况
+      description: 时间、流程、要交的材料、卡在哪一步、有没有截止日期、找谁办
+    validations:
+      required: true
+  - type: textarea
+    id: advice
+    attributes:
+      label: 给后来人的提醒
+      description: 如果只能提醒一句，你会说什么
+    validations:
+      required: false
